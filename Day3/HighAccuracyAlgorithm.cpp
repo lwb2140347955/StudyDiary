@@ -33,7 +33,7 @@ std::vector<int> sub(std::vector<int>& a,std::vector<int>& b)
 	{
 		int temp = a[i] - borrow;
 		if(i < b.size()) temp -= b[i];
-		if(temp > 0)
+		if(temp >= 0)
 		{
 			c.push_back(temp);
 			borrow = 0; 
